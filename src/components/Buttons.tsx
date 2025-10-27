@@ -27,11 +27,11 @@ const LeftBtn: React.FC<BtnProp> = ({ value }) => {
 const RightBtn: React.FC = () => {
   return (
     <div>
-      <button className="border-2 border-[#CCCCCC] text-center p-2 rounded-lg">
+      <button className="2xl:border-2 sm:border border border-[#CCCCCC] text-center p-1 2xl:p-1 rounded 2xl:rounded-lg">
         <img
           src={"src/assets/add to card.png"}
           alt=""
-          className="size-[2.125rem]"
+          className="size-[1.125rem] 2xl:size-[2.125rem] "
         />
       </button>
     </div>

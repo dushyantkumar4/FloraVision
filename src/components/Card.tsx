@@ -4,17 +4,17 @@ import imgUrl from "../assets/svg/card_bg.svg";
 
 const Card: React.FC = () => {
   return (
-    <div
-      className=" bg-no-repeat bg-contain bg-center bg-transparent max-w-[10rem] border-none"
-      style={{
-        backgroundImage: `url(${imgUrl})`,
-      }}
-    >
-      <div className="backdrop-blur-[25px] ">
+    <div className="border-none flex items-end ">
+      <div
+        className="flex flex-col items-center  bg-atuo bg-center "
+        style={{
+          backgroundImage: `url(${imgUrl})`,
+        }}
+      >
         <img
           src="src\assets\flore_img_1.png"
           alt=""
-          className="lg:size-[10rem] xl:size-[10.6875rem]"
+          className="sm:size-[6rem] xl:size-[10.6875rem]"
         />
         <div>
           <h2 className="text-[#FFFFFFBF] font-normal xl-text-[2.375rem]">

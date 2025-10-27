@@ -10,7 +10,7 @@ interface LeftProp {
 
 const LeftTrandy: React.FC<LeftProp> = ({title,desc,price,img}) => {
   return (
-    <div className="border-2 h-[32.875rem] rounded-[9.4375rem] [border-image:linear-gradient(to_right,#FFFFFF45,#FFFFFF00,#FFFFFF54)_1] flex items-center  justify-between backdrop-blur-[40px] text-[#FFFFFF0D] p-6">
+    <div className="border-2 h-[32.875rem] rounded-[9.4375rem]  flex items-center  justify-between backdrop-blur-[40px] text-[#FFFFFF0D] p-6">
       {/* left section  */}
       <div className="h-[45.75rem] w-[37.56rem] flex items-baseline">
         <img src={img} alt="" className="w-full" />
