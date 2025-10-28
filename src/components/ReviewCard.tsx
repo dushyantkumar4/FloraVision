@@ -15,13 +15,13 @@ const ReviewCard: React.FC<ReviewProps> = ({
   description,
 }) => {
   return (
-    <div className=" bg-no-repeat  bg-center" style={{
-          backgroundImage: `url(${bgUrl})`,
-        }}>
-      <div
-        className="backdrop-blur-[25px]"
-        
-      >
+    <div
+      className=" bg-no-repeat  bg-center p-8 rounded-[4.8125rem] overflow-hidden"
+      style={{
+        backgroundImage: `url(${bgUrl})`,
+      }}
+    >
+      <div className="backdrop-blur-[25px]">
         <div className="flex gap-4 items-center">
           <img
             src={imgUrl}

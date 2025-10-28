@@ -6,11 +6,11 @@ interface BtnProp {
 
 const MediaBtn = () => {
   return (
-    <div className="flex gap-5 items-center">
-      <div className="border-2 border-[#FFFFFF] rounded-full flex justify-center items-center py-2 px-4">
-        <i className="fa-solid fa-play text-[#FFFFFF] opacity-75 size-[2.125rem] !flex !justify-center !items-center"></i>
+    <div className="flex gap-4 items-center">
+      <div className="border 2xl:border-2 border-[#FFFFFF] rounded-full flex justify-center items-center px-3 py-1 2xl:py-2 2xl:px-4">
+        <i className="fa-solid fa-play text-[#FFFFFF] opacity-75 size-[2.125rem] flex! justify-center! items-center!"></i>
       </div>
-      <span className="text-[1.5625rem] text-[#FFFFFF]">Live Demo...</span>
+      <span className="2xl:text-[1.5625rem] text-[#FFFFFF]">Live Demo...</span>
     </div>
   );
 };
@@ -18,7 +18,7 @@ const MediaBtn = () => {
 const LeftBtn: React.FC<BtnProp> = ({ value }) => {
   return (
     <div>
-      <button className="border-2 border-[#CCCCCC] text-center py-1 px-5 rounded-lg text-[#FFFFFF] font-medium text-[1.75rem]">
+      <button className="2xl:border-2 sm:border border border-[#CCCCCC] text-center py-1 px-5 rounded-lg text-[#FFFFFF] font-medium 2xl:text-[1.75rem]">
         {value}
       </button>
     </div>
