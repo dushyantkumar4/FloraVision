@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <div className="px-6 flex flex-col gap-10">
+    <div className="px-6 flex flex-col gap-10 py-15">
       {/* top secton */}
-      <div className="grid grid-cols-3">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {/* first  */}
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-1">
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                 className="border-none outline-none text-[#FFFFFFBF] 2xl:font-medium 2xl:text-[1.5rem]"
                 placeholder="Enter Email"
               />
-              <button className="text-[#000000] bg-[#FFFFFF] rounded py-1 px-5 font-medium 2xl:font-bold 2xl:text-[1.375rem]">
+              <button className="text-[#000000] bg-[#FFFFFF] rounded py-1.5 px-5 font-medium 2xl:font-bold 2xl:text-[1.375rem]">
                 SUBSCRIBE
               </button>
             </div>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {/* bottom section */}
-      <div className="flex items-center justify-between mb-10 py-5 pr-10">
+      <div className="flex items-center justify-between py-5 pr-10">
         <div className="flex gap-10">
           <span className="text-[#FFFFFF] text-[1.2rem] 2xl:text-[1.75rem] font-extrabold">
             FB

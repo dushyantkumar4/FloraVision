@@ -6,7 +6,7 @@ const Card: React.FC = () => {
   return (
     <div className="border-none flex items-end ">
       <div
-        className="flex flex-col items-center  bg-atuo bg-center "
+        className="flex flex-col items-center  object-fill bg-center rounded-[4.8125rem]"
         style={{
           backgroundImage: `url(${imgUrl})`,
         }}

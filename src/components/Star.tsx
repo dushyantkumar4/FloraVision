@@ -13,7 +13,7 @@ const Star: React.FC<StarProp> = ({ rating, size }) => {
   return (
     <div className="flex items-center">
       {[...Array(fullStars)].map((_, i) => (
-        <FaStar key={`full-${i}`} className={`text-[#FFF84E] size-[${size}]`} />
+        <FaStar key={`full-${i}`} className={`text-[#FFF84E] !size-[${size}]`} />
       ))}
       {hasHalfStar && (
         <FaStarHalfAlt key="half" className={`text-[#FFF84E] size-[${size}]`} />

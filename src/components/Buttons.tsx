@@ -10,7 +10,7 @@ const MediaBtn = () => {
       <div className="border 2xl:border-2 border-[#FFFFFF] rounded-full flex justify-center items-center px-3 py-1 2xl:py-2 2xl:px-4">
         <i className="fa-solid fa-play text-[#FFFFFF] opacity-75 size-[2.125rem] flex! justify-center! items-center!"></i>
       </div>
-      <span className="2xl:text-[1.5625rem] text-[#FFFFFF]">Live Demo...</span>
+      <span className="customeFont 2xl:text-[1.5625rem] text-[#FFFFFF]">Live Demo...</span>
     </div>
   );
 };

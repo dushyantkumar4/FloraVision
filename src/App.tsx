@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cards from "./views/Cards";
 import CustomerReview from "./views/CustomerReview";
-import OurBest from "./components/OurBest";
+import OurBests from "./views/OurBests";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
       <Cards />
       <br />
       <CustomerReview />
-      <OurBest />
+      <OurBests />
       <Footer />
     </div>
   );
