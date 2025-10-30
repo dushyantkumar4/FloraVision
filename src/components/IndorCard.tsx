@@ -9,7 +9,7 @@ interface IndorProf {
 
 const IndorCard: React.FC<IndorProf> = ({ imgUrl, type, title }) => {
   return (
-    <div className="flex flex-col border items-center backdrop-blur-[15px] border-t-[#FFFFFF45] border-b-[#FFFFFF54] border-x-[#FFFFFF54] rounded-[4.8125rem] overflow-hidden pb-9 pl-2 pr-1 max-w-[18rem]">
+    <div className="flex flex-col border items-center backdrop-blur-[15px] border-t-[#FFFFFF45] border-b-[#FFFFFF54] border-x-[#FFFFFF54] rounded-4xl 2xl:rounded-[4.8125rem] overflow-hidden pb-9 pl-2 pr-1 max-w-[18rem]">
       <img src={imgUrl} alt="" className="size-[15rem]" />
       <div className="flex flex-col gap-2">
         <p className="text-[#FFFFFFBF]">{type} </p>

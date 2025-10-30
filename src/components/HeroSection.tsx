@@ -7,7 +7,7 @@ import image from "../assets/flore_img_1.png";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 gap-5 mt-5 justify-between">
+    <div className="grid grid-cols-2 gap-5 mt-5 w-full justify-between">
       {/* left section */}
       <div className="flex flex-col gap-10">
         <div className=" flex flex-col gap-2 py-10">
@@ -28,7 +28,7 @@ const HeroSection: React.FC = () => {
         />
       </div>
       {/* right section  */}
-      <div>
+      <div className="place-self">
         <IndorCard imgUrl={image} type={"Indoor Plant "} title={"Aglaonema  plant"}/>
       </div>
     </div>

@@ -4,8 +4,8 @@ const Navbar: React.FC = () => {
   return (
     <div className="flex items-center justify-between px-6 py-5">
       <div className="flex items-center gap-1">
-        <img src={"src/assets/floralogo.png"} alt="" className="size-12" />
-        <span className="text-[1.75rem] font-black text-[#FFFFFF]">
+        <img src={"src/assets/floralogo.png"} alt="" className="size-10 2xl:size-12" />
+        <span className="text-[1.5rem] 2xl:text-[1.75rem] font-black text-[#FFFFFF] opacity-75">
           FloraVision.
         </span>
       </div>
