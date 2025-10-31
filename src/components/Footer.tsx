@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/floralogo.png";
 
 const Footer: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-1">
             <img
-              src={"src/assets/floralogo.png"}
+              src={logo}
               alt=""
               className=" size-[3rem] 2xl:size-[5.875rem]"
             />
@@ -29,9 +30,15 @@ const Footer: React.FC = () => {
           </h3>
           <ul className="flex flex-col gap-3">
             <li className="text-[#FFFFFF] 2xl:text-[1.5rem] underline">Home</li>
-            <li className="text-[#FFFFFF] 2xl:text-[1.5rem] underline">Type's Of plant's</li>
-            <li className="text-[#FFFFFF] 2xl:text-[1.5rem] underline">Contact</li>
-            <li className="text-[#FFFFFF] 2xl:text-[1.5rem] underline">Privacy</li>
+            <li className="text-[#FFFFFF] 2xl:text-[1.5rem] underline">
+              Type's Of plant's
+            </li>
+            <li className="text-[#FFFFFF] 2xl:text-[1.5rem] underline">
+              Contact
+            </li>
+            <li className="text-[#FFFFFF] 2xl:text-[1.5rem] underline">
+              Privacy
+            </li>
           </ul>
         </div>
         {/* third */}
@@ -40,13 +47,13 @@ const Footer: React.FC = () => {
             For Every Update.
           </h3>
           <form>
-            <div className="flex items-center justify-between border-2 border-[#FFFFFF] rounded-[0.5rem] py-0.5 pr-0.5 pl-3 max-w-80">
+            <div className="flex flex-col sm:flex-row items-center  sm:justify-between border-2 border-[#FFFFFF] rounded-[0.5rem] py-0.5 pr-0.5 pl-3 ">
               <input
                 type="text"
                 className="border-none outline-none text-[#FFFFFFBF] 2xl:font-medium 2xl:text-[1.5rem]"
                 placeholder="Enter Email"
               />
-              <button className="text-[#000000] bg-[#FFFFFF] rounded py-1.5 px-5 font-medium 2xl:font-bold 2xl:text-[1.375rem]">
+              <button className="text-[#000000] bg-[#FFFFFF] rounded py-1 px-3 md:py-1.5 md:px-5 md:font-medium 2xl:font-bold 2xl:text-[1.375rem]">
                 SUBSCRIBE
               </button>
             </div>

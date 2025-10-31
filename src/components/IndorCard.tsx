@@ -1,5 +1,6 @@
 import React from "react";
 import { LeftBtn } from "./Buttons";
+import move from "../assets/right_move.png";
 
 interface IndorProf {
   imgUrl: string;
@@ -20,7 +21,7 @@ const IndorCard: React.FC<IndorProf> = ({ imgUrl, type, title }) => {
               {title}
             </h3>
             <img
-              src="src\assets\right_move.png"
+              src={move}
               alt=""
               className="size-5 opacity-75"
             />

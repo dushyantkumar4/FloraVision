@@ -1,6 +1,7 @@
 import React from "react";
 import ReviewCard from "../components/ReviewCard";
 import Title from "../components/Title";
+import profile from "../assets/flora_reviewer_img.png"
 
 const CustomerReview: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const CustomerReview: React.FC = () => {
         <ReviewCard
           name={"Shelly Russel"}
           rating={4.5}
-          imgUrl={"src/assets/flora_reviewer_img.png"}
+          imgUrl={profile}
           description={
             "Just got my hands on some absolutely awesome plants, and I couldn’t be happier!"
           }
@@ -18,7 +19,7 @@ const CustomerReview: React.FC = () => {
         <ReviewCard
           name={"Shelly Russel"}
           rating={4.5}
-          imgUrl={"src/assets/flora_reviewer_img.png"}
+          imgUrl={profile}
           description={
             "Just got my hands on some absolutely awesome plants, and I couldn’t be happier!"
           }
@@ -26,7 +27,7 @@ const CustomerReview: React.FC = () => {
         <ReviewCard
           name={"Shelly Russel"}
           rating={4.5}
-          imgUrl={"src/assets/flora_reviewer_img.png"}
+          imgUrl={profile}
           description={
             "Just got my hands on some absolutely awesome plants, and I couldn’t be happier!"
           }

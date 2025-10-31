@@ -1,4 +1,5 @@
 import React from "react";
+import cart from "../assets/add to card.png";
 
 interface BtnProp {
   value: string;
@@ -29,7 +30,7 @@ const RightBtn: React.FC = () => {
     <div>
       <button className="lg:border-2 sm:border border border-[#CCCCCC] text-center p-2 rounded lg:rounded-lg">
         <img
-          src={"src/assets/add to card.png"}
+          src={cart}
           alt=""
           className="size-[1.125rem] 2xl:size-[2.125rem] "
         />

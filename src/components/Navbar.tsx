@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import logo from "../assets/floralogo.png";
+import search from "../assets/flora search.png"
+import cart from "../assets/add to card.png"
 
 const Navbar: React.FC = () => {
   const [showMenu, setShowMenu] = useState<boolean>(true);
@@ -7,7 +10,7 @@ const Navbar: React.FC = () => {
     <div className="flex items-center justify-between px-6 py-5">
       <div className="flex items-center gap-1">
         <img
-          src={"src/assets/floralogo.png"}
+          src={logo}
           alt=""
           className="size-8 2xl:size-12"
         />
@@ -35,12 +38,12 @@ const Navbar: React.FC = () => {
       </div>
       <div className="flex items-center gap-5">
         <img
-          src={"src/assets/flora search.png"}
+          src={search}
           alt=""
           className="size-4 2xl:size-6.5"
         />
         <img
-          src={"src/assets/add to card.png"}
+          src={cart}
           alt=""
           className="size-4 2xl:size-6.5"
         />

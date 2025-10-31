@@ -1,14 +1,22 @@
 import React from "react";
 import { LeftBtn } from "./Buttons";
+import move from "../assets/right_move.png";
 
-const OurBest: React.FC = () => {
+interface OurBestProp {
+  imgUrl:string;
+  title:string;
+  about:string;
+  desc:string;
+}
+
+const OurBest: React.FC<OurBestProp> = ({imgUrl,title,about,desc}) => {
   return (
     <div className=" border border-t-[#FFFFFF45] border-b-[#FFFFFF54] border-x-[#FFFFFF54] backdrop-blur-[40px] rounded-[4rem] 2xl:rounded-[5.75rem] py-10">
       <div className="grid grid-rows-2 sm:grid-rows-2 lg:grid-rows-1 lg:grid-cols-2">
         {/* left section  */}
         <div className="relative flex justify-center">
           <img
-            src="src\assets\flore_img_1.png"
+            src={imgUrl}
             alt=""
             className="absolute size-[20rem] lg:size-[28rem] -top-26 lg:-left-9"
           />
@@ -18,17 +26,13 @@ const OurBest: React.FC = () => {
         <div className="flex flex-col gap-2 lg:py-10 px-10">
           <div className="flex flex-col gap-5">
             <h2 className="text-[#FFFFFFBF] font-semibold text-xl 2xl:text-[2.375rem]">
-              We Have Small And Best O2 Plants Collection's
+              {title}
             </h2>
             <p className="text-[#FFFFFFBF] font-semibold">
-              Oxygen-producing plants, often referred to as "O2 plants," are
-              those that release oxygen into the atmosphere through the process
-              of photosynthesis.
+             {about}
             </p>
             <p className="text-[#FFFFFFBF] font-semibold">
-              Many plants can help filter out pollutants and toxins from the
-              air, such as formaldehyde, benzene, and trichloroethylene. This
-              makes the air cleaner and healthier to breathe.
+              {desc}
             </p>
           </div>
 
@@ -36,7 +40,7 @@ const OurBest: React.FC = () => {
             <LeftBtn value="Explore" />
             <div className="flex items-center gap-5">
               <img
-                src="src\assets\right_move.png"
+                src={move}
                 alt=""
                 className="size-4 2xl:size-6 opacity-35 rotate-180"
               />
@@ -47,7 +51,7 @@ const OurBest: React.FC = () => {
                 <span className="text-[#FFFFFFBF] font-bold text-sm">04</span>
               </span>
               <img
-                src="src\assets\right_move.png"
+                src={move}
                 alt=""
                 className="size-4 2xl:size-6 opacity-75"
               />

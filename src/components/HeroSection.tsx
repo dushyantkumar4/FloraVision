@@ -3,6 +3,7 @@ import Rating from "./Rating";
 import { LeftBtn, MediaBtn } from "./Buttons";
 import IndorCard from "./IndorCard";
 import image from "../assets/flore_img_1.png";
+import profile from "../assets/flora_reviewer_img.png";
 
 const HeroSection: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ const HeroSection: React.FC = () => {
         <Rating
           name={"Ronnie Hamill"}
           rating={4.5}
-          imgUrl={"src/assets/flora_reviewer_img.png"}
+          imgUrl={profile}
           description={
             "I can't express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home."
           }
