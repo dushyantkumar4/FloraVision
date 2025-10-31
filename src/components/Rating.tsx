@@ -22,7 +22,7 @@ const Rating: React.FC<RatingProps> = ({
           <span className="text-[#FFFFFF] font-normal text-lg 2xl:text-[1.375rem]">
             {name}
           </span>
-          <span className=""><Star rating={rating} size={"3"}/></span>
+          <span className=""><Star rating={rating}/></span>
         </div>
       </div>
       <p className="text-[#FFFFFF] font-normal text-xs 2xl:text-base">{description}</p>

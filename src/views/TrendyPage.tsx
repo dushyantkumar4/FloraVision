@@ -1,13 +1,12 @@
 import React from "react";
-import LeftTrandy from "./LeftTrandy";
-import RightTrandy from "./RightTrandy";
+import LeftTrandy from "../components/LeftTrandy";
+import RightTrandy from "../components/RightTrandy";
+import Title from "../components/Title";
 
 const TrendyPage: React.FC = () => {
   return (
-    <div className="flex flex-col gap-10">
-      <h2 className="text-[#FFFFFF] font-semibold text-[3.4375rem] text-center">
-        Our Trendy plants
-      </h2>
+    <div className="flex flex-col items-center gap-25 py-10">
+      <Title title="Our Trendy plants"/>
       <LeftTrandy
         img={"src/assets/second-plant.png"}
         title={"For Your Desks Decorations"}

@@ -18,7 +18,7 @@ const MediaBtn = () => {
 const LeftBtn: React.FC<BtnProp> = ({ value }) => {
   return (
     <div>
-      <button className="2xl:border-2 sm:border border border-[#CCCCCC] text-center py-1 px-5 rounded-lg text-[#FFFFFF] font-medium 2xl:text-[1.75rem]">
+      <button className="lg:border-2 sm:border border-[#CCCCCC] text-center py-1.5 px-7 rounded-lg text-[#FFFFFF] font-medium 2xl:text-[1.75rem]">
         {value}
       </button>
     </div>
@@ -27,7 +27,7 @@ const LeftBtn: React.FC<BtnProp> = ({ value }) => {
 const RightBtn: React.FC = () => {
   return (
     <div>
-      <button className="2xl:border-2 sm:border border border-[#CCCCCC] text-center p-1 2xl:p-1 rounded 2xl:rounded-lg">
+      <button className="lg:border-2 sm:border border border-[#CCCCCC] text-center p-2 rounded lg:rounded-lg">
         <img
           src={"src/assets/add to card.png"}
           alt=""

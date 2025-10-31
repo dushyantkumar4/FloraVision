@@ -1,31 +1,31 @@
 import React from "react";
 import { RightBtn } from "./Buttons";
-import imgUrl from "../assets/svg/card_bg.svg";
 
-const Card: React.FC = () => {
+interface CardProp {
+  img: string;
+  title: string;
+  desc: string;
+  price: string;
+}
+
+const Card: React.FC<CardProp> = ({ img, title, desc, price }) => {
   return (
-    <div className="border-none flex items-end ">
-      <div
-        className="flex flex-col items-center  object-fill bg-center rounded-[4.8125rem]"
-        style={{
-          backgroundImage: `url(${imgUrl})`,
-        }}
-      >
+    <div className="border border-2 border-t-[#FFFFFF45] border-b-[#FFFFFF54] border-x-[#FFFFFF54] rounded-4xl 2xl:rounded-[4.8125rem]">
+      <div className="relative flex flex-col items-center px-12 pb-8 pt-45">
         <img
-          src="src\assets\flore_img_1.png"
+          src={img}
           alt=""
-          className="sm:size-[6rem] xl:size-[10.6875rem]"
+          className="absolute -top-15 size-[14rem]  2xl:size-[28.6875]"
         />
-        <div>
-          <h2 className="text-[#FFFFFFBF] font-normal xl-text-[2.375rem]">
-            Aglaonema plant
+        <div className="flex flex-col gap-2">
+          <h2 className="text-[#FFFFFFBF] font-normal text-2xl 2xl:text-[2.375rem]">
+            {title}
           </h2>
-          <p className="text-[#FFFFFFBF] text-[10px]">
-            The Aglaonema plant, commonly known as Chinese Evergreen known for
-            its attractive foliage and ease of care
-          </p>
+          <p className="text-[#FFFFFFBF] text-sm">{desc}</p>
           <div className="flex items-center justify-between">
-            <span className="text-[#FFFFFFBF] text-xs">Rs. 300/-</span>
+            <span className="text-[#FFFFFFBF] font-normal text-2xl 2xl:text-[2.375rem]">
+              Rs. {price}/-
+            </span>
             <RightBtn />
           </div>
         </div>

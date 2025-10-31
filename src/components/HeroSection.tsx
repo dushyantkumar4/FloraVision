@@ -7,11 +7,11 @@ import image from "../assets/flore_img_1.png";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 gap-5 mt-5 w-full justify-between">
+    <div className="grid grid-cols-2 gap-5  w-full justify-between">
       {/* left section */}
       <div className="flex flex-col gap-10">
-        <div className=" flex flex-col gap-2 py-10">
-          <h1 className="text-[#FFFFFF] font-semibold text-[3.5rem] 2xl:text-[7.375rem]">Earth's Exhale</h1>
+        <div className=" flex flex-col gap-2 py-10 opacity-75">
+          <h1 className="text-[#FFFFFF] font-semibold text-[4.5rem] 2xl:text-[7.375rem]">Earth's Exhale</h1>
           <p className="text-[#FFFFFF] font-medium text-sm 2xl:text-[1.4375rem]">"Earth Exhale" symbolizes the purity and vitality of the Earth's natural environment and its essential role in sustaining life.</p>
           <div className="flex items-center gap-4">
             <LeftBtn value={"Buy Now"}/>
@@ -28,7 +28,7 @@ const HeroSection: React.FC = () => {
         />
       </div>
       {/* right section  */}
-      <div className="place-self">
+      <div className="flex items-center justify-end">
         <IndorCard imgUrl={image} type={"Indoor Plant "} title={"Aglaonema  plant"}/>
       </div>
     </div>

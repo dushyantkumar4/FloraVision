@@ -1,7 +1,6 @@
 import React from "react";
-import TrendyPage from "../components/TrendyPage";
+import TrendyPage from "./TrendyPage";
 import HeroSection from "../components/HeroSection";
-
 
 const LendingPage: React.FC = () => {
   return (

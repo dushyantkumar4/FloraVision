@@ -2,32 +2,34 @@ import React from "react";
 import { Buttons } from "./Buttons";
 
 interface LeftProp {
-  title:string;
-  desc:string;
-  price:number;
-  img:string;
+  title: string;
+  desc: string;
+  price: number;
+  img: string;
 }
 
-const LeftTrandy: React.FC<LeftProp> = ({title,desc,price,img}) => {
+const LeftTrandy: React.FC<LeftProp> = ({ title, desc, price, img }) => {
   return (
-    <div className="border-2 h-[32.875rem] rounded-[9.4375rem]  flex items-center  justify-between backdrop-blur-[40px] text-[#FFFFFF0D] p-6">
-      {/* left section  */}
-      <div className="h-[45.75rem] w-[37.56rem] flex items-baseline">
-        <img src={img} alt="" className="w-full" />
-      </div>
+    <div className="border-2 rounded-[6rem] 2xl:rounded-[9.4375rem] border-t-[#FFFFFF45] border-b-[#FFFFFF54] border-x-[#FFFFFF54] flex items-center justify-between backdrop-blur-[40px] text-[#FFFFFF0D] py-16 px-6">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-2 items-center">
+        {/* left section  */}
+        <div className="relative flex items-center justify-center ">
+          <img src={img} alt="" className="absolute h-[29rem] w-[29rem] -bottom-37" />
+        </div>
 
-      {/* right section  */}
-      <div className="flex flex-col gap-5">
-        <h2 className="text-[#FFFFFF] text-[2.375rem] font-semibold">
-          {title}
-        </h2>
-        <p className="text-[#FFFFFF] text-[1.25rem] font-semibold">
-          {desc}
-        </p>
-        <p className="text-[#FFFFFF] text-[2.375rem] font-semibold">
-          Rs. {price}/-
-        </p>
-        <Buttons/>
+        {/* right section  */}
+        <div className="flex flex-col gap-5">
+          <h2 className="text-[#FFFFFF] text-[1.7rem] 2xl:text-[2.375rem] font-semibold">
+            {title}
+          </h2>
+          <p className="text-[#FFFFFF] 2xl:text-[1.25rem] font-semibold">
+            {desc}
+          </p>
+          <p className="text-[#FFFFFF] text-[1.7rem] 2xl:text-[2.375rem] font-semibold">
+            Rs. {price}/-
+          </p>
+          <Buttons />
+        </div>
       </div>
     </div>
   );

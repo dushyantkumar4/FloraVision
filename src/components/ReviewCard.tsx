@@ -1,5 +1,4 @@
 import React from "react";
-import bgUrl from "../assets/svg/review_card.svg";
 import Star from "./Star";
 
 interface ReviewProps {
@@ -17,12 +16,9 @@ const ReviewCard: React.FC<ReviewProps> = ({
 }) => {
   return (
     <div
-      className=" bg-no-repeat bg-cover  h-auto w-auto bg-center p-8 rounded-4xl 2xl:rounded-[4.8125rem] overflow-hidden"
-      style={{
-        backgroundImage: `url(${bgUrl})`,
-      }}
+      className="border h-auto w-auto bg-center p-10 rounded-4xl 2xl:rounded-[4.8125rem] overflow-hidden border-t-[#FFFFFF45] border-b-[#FFFFFF54] border-x-[#FFFFFF54]"
     >
-      <div className="">
+      <div className="flex flex-col gap-10 ">
         <div className="flex gap-4 items-center">
           <img
             src={imgUrl}
@@ -33,7 +29,7 @@ const ReviewCard: React.FC<ReviewProps> = ({
             <span className="text-[#FFFFFF] font-normal 2xl:text-[1.375rem]">
               {name}
             </span>
-            <Star rating={rating} size={"3"}/>
+            <Star rating={rating}/>
           </div>
         </div>
         <p className="text-[#FFFFFF] font-normal text-xs 2xl:text-base ">{description}</p>
