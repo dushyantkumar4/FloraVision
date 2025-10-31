@@ -8,7 +8,7 @@ import Cards from "./views/Cards";
 import CustomerReview from "./views/CustomerReview";
 import OurBests from "./views/OurBests";
 
-const App = () => {
+const App:React.FC = () => {
   return (
     <div className="w-full bg-[#1B2316]">
       <Navbar />
