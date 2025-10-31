@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {/* bottom section */}
-      <div className="flex items-center justify-between py-5 pr-10">
+      <div className="flex flex-col md:flex-row md:items-center justify-between py-5 pr-10">
         <div className="flex gap-10">
           <span className="text-[#FFFFFF] text-[1.2rem] 2xl:text-[1.75rem] font-extrabold">
             FB

@@ -11,10 +11,10 @@ interface LeftProp {
 const LeftTrandy: React.FC<LeftProp> = ({ title, desc, price, img }) => {
   return (
     <div className="border-2 rounded-[6rem] 2xl:rounded-[9.4375rem] border-t-[#FFFFFF45] border-b-[#FFFFFF54] border-x-[#FFFFFF54] flex items-center justify-between backdrop-blur-[40px] text-[#FFFFFF0D] py-16 px-6">
-      <div className="grid sm:grid-cols-1 lg:grid-cols-2 items-center">
+      <div className="grid grid-rows-2 sm:grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 items-center">
         {/* left section  */}
         <div className="relative flex items-center justify-center ">
-          <img src={img} alt="" className="absolute h-[29rem] w-[29rem] -bottom-37" />
+          <img src={img} alt="" className="absolute size-96 lg:size-116 -bottom-20 lg:-bottom-37" />
         </div>
 
         {/* right section  */}

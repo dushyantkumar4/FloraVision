@@ -4,18 +4,22 @@ import { LeftBtn, MediaBtn } from "./Buttons";
 import IndorCard from "./IndorCard";
 import image from "../assets/flore_img_1.png";
 
-
 const HeroSection: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 gap-5  w-full justify-between">
+    <div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 gap-5  w-full justify-between">
       {/* left section */}
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col items-center lg:items-start gap-10">
         <div className=" flex flex-col gap-2 py-10 opacity-75">
-          <h1 className="text-[#FFFFFF] font-semibold text-[4.5rem] 2xl:text-[7.375rem]">Earth's Exhale</h1>
-          <p className="text-[#FFFFFF] font-medium text-sm 2xl:text-[1.4375rem]">"Earth Exhale" symbolizes the purity and vitality of the Earth's natural environment and its essential role in sustaining life.</p>
+          <h1 className="text-[#FFFFFF] font-semibold text-[4.5rem] 2xl:text-[7.375rem]">
+            Earth's Exhale
+          </h1>
+          <p className="text-[#FFFFFF] font-medium text-sm 2xl:text-[1.4375rem]">
+            "Earth Exhale" symbolizes the purity and vitality of the Earth's
+            natural environment and its essential role in sustaining life.
+          </p>
           <div className="flex items-center gap-4">
-            <LeftBtn value={"Buy Now"}/>
-            <MediaBtn/>
+            <LeftBtn value={"Buy Now"} />
+            <MediaBtn />
           </div>
         </div>
         <Rating
@@ -28,8 +32,12 @@ const HeroSection: React.FC = () => {
         />
       </div>
       {/* right section  */}
-      <div className="flex items-center justify-end">
-        <IndorCard imgUrl={image} type={"Indoor Plant "} title={"Aglaonema  plant"}/>
+      <div className="flex items-center justify-center lg:justify-end">
+        <IndorCard
+          imgUrl={image}
+          type={"Indoor Plant "}
+          title={"Aglaonema  plant"}
+        />
       </div>
     </div>
   );

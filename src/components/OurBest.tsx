@@ -3,18 +3,19 @@ import { LeftBtn } from "./Buttons";
 
 const OurBest: React.FC = () => {
   return (
-    <div className=" border border-t-[#FFFFFF45] border-b-[#FFFFFF54] border-x-[#FFFFFF54] backdrop-blur-[40px] rounded-[4rem] 2xl:rounded-[5.75rem] pr-5 py-10 h:auto">
-      <div className="grid sm:grid-cols-1 lg:grid-cols-2 items-center ">
+    <div className=" border border-t-[#FFFFFF45] border-b-[#FFFFFF54] border-x-[#FFFFFF54] backdrop-blur-[40px] rounded-[4rem] 2xl:rounded-[5.75rem] py-10">
+      <div className="grid grid-rows-2 sm:grid-rows-2 lg:grid-rows-1 lg:grid-cols-2">
         {/* left section  */}
-
-        <img
-          src="src\assets\flore_img_1.png"
-          alt=""
-          className="absolute size-[15rem] lg:size-[28rem] -top-26 -left-5"
-        />
+        <div className="relative flex justify-center">
+          <img
+            src="src\assets\flore_img_1.png"
+            alt=""
+            className="absolute size-[20rem] lg:size-[28rem] -top-26 lg:-left-9"
+          />
+        </div>
 
         {/* right section  */}
-        <div className="flex flex-col gap-2 lg:py-10 ">
+        <div className="flex flex-col gap-2 lg:py-10 px-10">
           <div className="flex flex-col gap-5">
             <h2 className="text-[#FFFFFFBF] font-semibold text-xl 2xl:text-[2.375rem]">
               We Have Small And Best O2 Plants Collection's
